@@ -12,6 +12,8 @@ Using play-by-play data from all 126 regular-season matches of the 2025-26 Korea
 
 - `data/df_final_with_metrics.csv` — Preprocessed dataset with computed indicators
 - `src/dvw_batch_pipeline.py` — .dvw scouting file parser (built on [pydatavolley](https://github.com/openvolley/pydatavolley))
+- `notebooks/analysis_full.ipynb` — Full analysis pipeline (model training, indicator computation, mediation analysis, Delphi validation)
+- `requirements.txt`
 - `README.md`
 - `LICENSE`
 
@@ -29,10 +31,9 @@ This repository includes only the preprocessed dataset used in the analysis (`da
 
 ## How to Run
 
-```bash
-pip install -r requirements.txt
-python src/dvw_batch_pipeline.py
-```
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run the parsing pipeline: `python src/dvw_batch_pipeline.py`
+3. Open `notebooks/analysis_full.ipynb` to reproduce the full analysis, including model training, indicator computation, and mediation analysis.
 
 ## Citation
 
